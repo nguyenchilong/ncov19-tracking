@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('includes/head'); %>
+<body class="bg-dark text-white h-100">
+<%- include('includes/header'); %>
+<main class="container-fluid px-5 h-75">
+    <div class="row">
+        <% if(articles && (typeof articles === 'object' || Array.isArray(articles))) {
+        articles.forEach(article => { %>
+        <div class="col-md-4">
+            <div class="item-box-blog">
+                <div class="item-box-blog-image">
+                    <!--Date-->
+                    <div class="item-box-blog-date bg-blue-ui white">
+                        <span class="mon"><%= article.publishedAt %></span>
+                    </div>
+                    <!--Image-->
+                    <figure>
+                        <% if(article.urlToImage) { %>
+                        <img alt="<%= article.title %>" src="<%= article.urlToImage %>" />
+                        <% } else { %>
+                        <img alt="<%= article.title %>" src="https://www.who.int/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-479v.jpg" />
+                        <% } %>
+                    </figure>
+                </div>
+                <div class="item-box-blog-body">
+                    <!--Heading-->
+                    <div class="item-box-blog-heading">
+                        <a href="<%= article.url %>" tabindex="0">
+                            <h5><%= article.title %></h5>
+                        </a>
+                    </div>
+                    <!--Text-->
+                    <div class="item-box-blog-text">
+                        <p><%= article.description %></p>
+                    </div>
+                    <div class="mt">
+                        <a href="<%= article.url %>" tabindex="0" class="btn bg-blue-ui white read">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% })
+        } else { %>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="alert alert-warning" role="alert">
+                    Oh no! No News about nCoV 19 for today.
+                </div>
+                <a href="/">Back To Home</a>
+            </div>
+        <% } %>
+    </div>
+</main>
+<div class="clearfix h-20">&nbsp;</div>
+<%- include('includes/footer'); %>
+</body>
+
+</html>

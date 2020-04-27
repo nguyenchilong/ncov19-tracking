@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('includes/head'); %>
+<body class="bg-dark text-white" style="height: 100vh;">
+    <%- include('includes/header'); %>
+    <main class="container-fluid px-5">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" class="form-control" id="faqSearch" placeholder="Search FAQ's" aria-label="Country">
+            </div>
+        </div>
+        <div class="row">
+            <% faqData.forEach(faq => { %>
+            <div class="col-md-4">
+                <div class="accordion m-3" id="accordian<%= faq.id %>">
+                    <div class="card bg-dark">
+                        <div class="card-header " id="heading<%= faq.id %>">
+                            <h5 class="mb-0">
+                                <button class="btn btn-transparent text-white text-left" type="button"
+                                    data-toggle="collapse" data-target="#collapse<%= faq.id %>" aria-expanded="true"
+                                    aria-controls="collapse<%= faq.id %> ">
+                                    <%= faq.id %>. <span class="faq "><%= faq.question %></span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse<%= faq.id %>" class="collapse show" aria-labelledby="heading<%= faq.id %>"
+                            data-parent="#accordian<%= faq.id %>">
+                            <div class="card-body">
+                                <h3><strong><%= faq.answer %> </strong></h3>
+                                <hr>
+                                <p>
+                                    <ul>
+                                        <% for( let index = 0; index < faq.description.length; index++ ) { %>
+                                        <li><%- faq.description[index] %> </li>
+                                        <% } %>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </main>
+    <%- include('includes/footer'); %>
+    <script type="module" src="js/faq.js"></script>
+</body>
+
+</html>

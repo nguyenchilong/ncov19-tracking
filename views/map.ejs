@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('includes/head'); %>
+<body class="bg-dark text-white" style="height: 100vh;">
+    <%- include('includes/header'); %>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 " style="padding-left: 0; padding-right: 0; ">
+                <div>
+                    <div class="card-body bg-dark" style="height: 90vh;">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Cases: </label>
+                                <label style="color: #ffc107 !important;font-weight: bold;" id="totalCases"></label>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Deaths: </label>
+                                <label style="color: #dc3545 !important;font-weight: bold;" id="totalDeaths"></label>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Recoveries: </label>
+                                <label style="color: #28a745 !important;font-weight: bold;" id="totalRecoveries"></label>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-md-block d-xl-block">
+                            <div class="input-group mt-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="Search"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                    id="countrySearch" aria-describedby="Search">
+                            </div>
+                            <div class="">
+                                <ul class="list-group overflow-auto" id="countriesContainer" style="max-height: 60vh;">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div id='map' class="text-dark" style='height:90vh;'></div>
+            </div>
+        </div>
+    </main>
+    <%- include('includes/footer'); %>
+    <script type="module" src="js/map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+[
+	{
+		"name": "usa",
+		"alt_name": "usa",
+		"url": "https://www.worldometers.info/coronavirus/country/us"
+	},
+	{
+		"name": "s. korea",
+		"alt_name": "Korea (Republic of)",
+		"url": "https://www.worldometers.info/coronavirus/country/south-korea"
+	},{
+		"name": "Diamond Princess",
+		"alt_name": "Diamond Princess",
+		"url": "https://www.worldometers.info/coronavirus/country/diamond-princess",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_sb-flag.gif"
+	},
+	{
+		"name": "czechia",
+		"alt_name": "Czech Republic",
+		"url": "https://www.worldometers.info/coronavirus/country/czechia"
+	},
+	{
+		"name": "st. vincent grenadines",
+		"alt_name": "Saint Vincent and the Grenadines",
+		"url": "https://www.worldometers.info/coronavirus/country/vincent-grenadines"
+	},
+	{
+		"name": "british virgin islands",
+		"alt_name": "Virgin Islands (British)",
+		"url": "https://www.worldometers.info/coronavirus/country/british-virgin-islands"
+	},
+	{
+		"name": "réunion",
+		"alt_name": "Reunion",
+		"url": "https://www.worldometers.info/coronavirus/country/Réunion"
+	},
+	{
+		"name": "Sierra Leone",
+		"alt_name": "Sierra Leone",
+		"url": "https://www.worldometers.info/coronavirus/country/sierra-leone"
+	},
+	{
+		"name": "Sint Maarten",
+		"alt_name": "Sint Maarten",
+		"url": "https://www.worldometers.info/coronavirus/country/sint-maarten"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/cayman-islands",
+		"name": "Cayman Islands",
+		"alt_name": "Cayman Islands"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/french-polynesia",
+		"name": "French Polynesia",
+		"alt_name": "French Polynesia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/guinea-bissau",
+		"name": "Guinea Bissau",
+		"alt_name": "Guinea Bissau"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/china-macao-sar",
+		"alt_name": "Macao",
+		"name": "Macao"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-martin",
+		"alt_name": "Saint Martin",
+		"name": "Saint Martin"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/antigua-and-barbuda",
+		"alt_name": "Antigua and Barbuda",
+		"name": "Antigua and Barbuda"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/timor-leste",
+		"alt_name": "Timor Leste",
+		"name": "Timor Leste"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/central-african-republic",
+		"alt_name": "CAR",
+		"name": "CAR"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/new-caledonia",
+		"alt_name": "New Caledonia",
+		"name": "New Caledonia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-kitts-and-nevis",
+		"alt_name": "Saint Kitts and Nevis",
+		"name": "Saint Kitts and Nevis"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-lucia",
+		"alt_name": "Saint Lucia",
+		"name": "Saint Lucia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-vincent-and-the-grenadines",
+		"alt_name": "St. Vincent Grenadines",
+		"name": "St. Vincent Grenadines"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/falkland-islands-malvinas",
+		"alt_name": "Falkland Islands",
+		"name": "Falkland Islands"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/turks-and-caicos-islands",
+		"alt_name": "Turks and Caicos",
+		"name": "Turks and Caicos"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/papua-new-guinea",
+		"alt_name": "Papua New Guinea",
+		"name": "Papua New Guinea"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/british-virgin-islands",
+		"alt_name": "British Virgin Islands",
+		"name": "British Virgin Islands"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-barthelemy",
+		"alt_name": "St. Barth",
+		"name": "St. Barth"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/south-sudan",
+		"alt_name": "South Sudan",
+		"name": "South Sudan"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/western-sahara",
+		"alt_name": "Western Sahara",
+		"name": "Western Sahara"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/caribbean-netherlands",
+		"alt_name": "Caribbean Netherlands",
+		"name": "Caribbean Netherlands",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_nl-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/sao-tome-and-principe",
+		"alt_name": "Sao Tome and Principe",
+		"name": "Sao Tome and Principe"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saint-pierre-and-miquelon",
+		"alt_name": "Saint Pierre Miquelon",
+		"name": "Saint Pierre Miquelon",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_sb-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/ms-zaandam",
+		"alt_name": "MS Zaandam",
+		"name": "MS Zaandam",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_sb-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/curacao",
+		"name": "Curaçao",
+		"alt_name": "Curaçao",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_cc-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/saudi-arabia",
+		"alt_name": "Saudi Arabia",
+		"name": "Saudi Arabia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/czech-republic",
+		"alt_name": "Czechia",
+		"name": "Czechia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/dominican-republic",
+		"alt_name": "Dominican Republic",
+		"name": "Dominican Republic"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/south-africa",
+		"alt_name": "South Africa",
+		"name": "South Africa"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/bosnia-and-herzegovina",
+		"alt_name": "Bosnia and Herzegovina",
+		"name": "Bosnia and Herzegovina"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/new-zealand",
+		"alt_name": "New Zealand",
+		"name": "New Zealand"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/macedonia",
+		"alt_name": "North Macedonia",
+		"name": "North Macedonia"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/china-hong-kong-sar",
+		"alt_name": "Hong Kong",
+		"name": "Hong Kong"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/cote-d-ivoire",
+		"alt_name": "Ivory Coast",
+		"name": "Ivory Coast"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/costa-rica",
+		"alt_name": "Costa Rica",
+		"name": "Costa Rica"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/burkina-faso",
+		"alt_name": "Burkina Faso",
+		"name": "Burkina Faso"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/san-marino",
+		"alt_name": "San Marino",
+		"name": "San Marino"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/channel-islands",
+		"alt_name": "Channel Islands",
+		"name": "Channel Islands",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_je-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/holy-see",
+		"alt_name": "Vatican City",
+		"name": "Vatican City",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_vt-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/sri-lanka",
+		"alt_name": "Sri Lanka",
+		"name": "Sri Lanka"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/democratic-republic-of-the-congo",
+		"alt_name": "DRC",
+		"name": "DRC"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/state-of-palestine",
+		"alt_name": "Palestine",
+		"name": "Palestine"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/isle-of-man",
+		"alt_name": "Isle of Man",
+		"name": "Isle of Man"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/el-salvador",
+		"alt_name": "El Salvador",
+		"name": "El Salvador"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/viet-nam",
+		"name": "Vietnam",
+		"alt_name": "Vietnam"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/equatorial-guinea",
+		"name": "Equatorial Guinea",
+		"alt_name": "Equatorial Guinea"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/faeroe-islands",
+		"name": "Faeroe Islands",
+		"alt_name": "Faeroe Islands",
+		"flag": "https://www.worldometers.info/img/flags/small/tn_fo-flag.gif"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/brunei-darussalam",
+		"alt_name": "Brunei",
+		"name": "Brunei"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/trinidad-and-tobago",
+		"name": "Trinidad and Tobago",
+		"alt_name": "Trinidad and Tobago"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/french-guiana",
+		"name": "French Guiana",
+		"alt_name": "French Guiana"
+	},
+	{
+		"url": "https://www.worldometers.info/coronavirus/country/cabo-verde",
+		"alt_name": "Cabo Verde",
+		"name": "Cabo Verde"
+	}
+]
+

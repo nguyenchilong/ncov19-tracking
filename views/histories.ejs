@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('includes/head'); %>
+<body class="bg-dark text-white h-100">
+    <%- include('includes/header'); %>
+    <main class="container-fluid px-5 h-75">
+        <label style="display: none;" id="countryName"><%= country %></label>
+        <div class="row">
+            <div class="col-md-12" id="historyChartCases"></div>
+            <div class="clearfix">&nbsp;</div>
+
+            <div class="col-md-12" id="historyChartDeaths"></div>
+            <div class="clearfix">&nbsp;</div>
+
+            <div class="col-md-12" id="historyChartRecovered"></div>
+            <div class="clearfix">&nbsp;</div>
+        </div>
+
+    </main>
+    <div class="clearfix h-40">&nbsp;</div>
+    <%- include('includes/footer'); %>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="module" src="/js/histories.js"></script>
+</body>
+
+</html>
