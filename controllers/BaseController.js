@@ -58,8 +58,8 @@ exports.newsScreen = async (req, res, next) => {
 	let to = moment().format(formatDay);
 	newsApi.v2.everything({
 		q: 'covid19',
-		sources: 'bbc-news,the-verge',
-		domains: 'bbc.co.uk,techcrunch.com',
+		sources: 'bbc-news,the-verge, cnn',
+		domains: 'bbc.co.uk,techcrunch.com,cnn.com',
 		from: from,
 		to: to,
 		language: 'en',
