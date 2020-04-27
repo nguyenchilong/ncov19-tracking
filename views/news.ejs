@@ -17,25 +17,25 @@
                     <!--Image-->
                     <figure>
                         <% if(article.urlToImage) { %>
-                        <img alt="<%= article.title %>" src="<%= article.urlToImage %>" />
+                        <img class="img-thumbnail h-200" alt="<%= article.title %>" src="<%= article.urlToImage %>" />
                         <% } else { %>
-                        <img alt="<%= article.title %>" src="https://www.who.int/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-479v.jpg" />
+                        <img class="img-thumbnail h-200" alt="<%= article.title %>" src="https://www.who.int/images/default-source/health-topics/coronavirus/corona-virus-getty.tmb-479v.jpg" />
                         <% } %>
                     </figure>
                 </div>
                 <div class="item-box-blog-body">
                     <!--Heading-->
                     <div class="item-box-blog-heading">
-                        <a href="<%= article.url %>" tabindex="0">
+                        <a href="<%= article.url %>" tabindex="0" target="_blank">
                             <h5><%= article.title %></h5>
                         </a>
                     </div>
                     <!--Text-->
                     <div class="item-box-blog-text">
-                        <p><%= article.description %></p>
+                        <p><%= article.description.replace( /(<([^>]+)>)/ig, '') %></p>
                     </div>
                     <div class="mt">
-                        <a href="<%= article.url %>" tabindex="0" class="btn bg-blue-ui white read">Read More</a>
+                        <a href="<%= article.url %>" target="_blank" tabindex="0" class="btn bg-blue-ui white read">Read More</a>
                     </div>
                 </div>
             </div>

@@ -160,3 +160,7 @@ figure img{width:300px;}
 .btn.bg-blue-ui.white.read:hover {
   box-shadow: 0px 5px 15px inset #4d5f77;
 }
+
+img.h-200 {
+  height: 200px !important;
+}

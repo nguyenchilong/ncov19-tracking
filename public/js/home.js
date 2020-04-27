@@ -4,10 +4,12 @@ const toggleModeBtn = document.getElementById('toggleModeBtn');
 const RegionSwitchers = document.querySelectorAll('.regionSwitchers');
 
 const switchRegion = (newRegion) => {
-    const currentRegion = document.querySelector('.regionSwitchers.active')
-    currentRegion.classList.remove('active')
-    newRegion.classList.add('active')
-    const allCountries = document.querySelectorAll('.countryListItems')
+    const currentRegion = document.querySelector('.regionSwitchers.active');
+    currentRegion.classList.remove('active');
+    newRegion.classList.add('active');
+    const allCountries = document.querySelectorAll('.countryListItems');
+    const titleRegion = document.getElementById('titleRegion');
+    titleRegion.innerText = `${newRegion.innerText === 'All' ? 'World' : newRegion.innerText} COVID-19 Stats`;
     if (newRegion.innerText !== "All") {
         allCountries.forEach(fullListCountry => {
             if (!fullListCountry.getAttribute('data-region').includes(newRegion.innerText)) {

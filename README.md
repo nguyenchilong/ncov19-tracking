@@ -17,5 +17,8 @@ This app shows the currentstatus of the covid spread around the world
  - geojson
  - nodemon (for development purposes)
  
+# Support
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/C0C01NKND)
+ 
  
  
