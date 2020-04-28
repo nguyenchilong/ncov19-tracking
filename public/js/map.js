@@ -73,7 +73,7 @@ const initCountryList = (countries) => {
         li.addEventListener("click", (countryListItem) => {
             setListItemActiveState(countryListItem);
             const countryName = countryListItem.currentTarget.getAttribute("data-id");
-            fetch(`${window.location.origin}/api/geo_country/${countryName}`).then(res => {
+            fetch(`${window.location.origin}/api/geo_country/${countryName === 'USA' ? 'US' : countryName}`).then(res => {
                 return res.json();
             }).then(data => {
                 goToLocationOnMap(data.long, data.lat);
