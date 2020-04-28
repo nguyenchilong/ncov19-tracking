@@ -74,6 +74,10 @@ const renderDetails = (data) => {
     const btnHistory = document.getElementById('btnHistory');
     btnHistory.setAttribute('href', `/history/${data.CountryInfo.name}`);
     btnHistory.style.display = 'block';
+    
+    // move to detail country
+    const countryDetails = document.getElementById('countryDetails');
+    countryDetails.scrollIntoView(true);
 
     if (data.hasOwnProperty('closedCases') && data.closedCases.totalClosed !== null) {
         closedCasesContainer.style.display = "block";
