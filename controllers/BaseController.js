@@ -3,6 +3,7 @@ const fs = require("fs");
 const os = require("os");
 const NewsAPI = require('newsapi');
 const axios = require('axios');
+const nodemailer = require('nodemailer');
 
 exports.homeScreen = async (req, res, next) => {
 	res.render('home')
@@ -31,10 +32,42 @@ exports.subscribeForm = async (req, res, next) => {
 	let filePathSub = "data/subscribe.json";
 	let content = fs.readFileSync(filePathSub);
 	let subObjects = JSON.parse(content) || [];
+	const smtpVars = process.env;
+	
+	let transporter = nodemailer.createTransport({
+		host: smtpVars.SMTP_HOST,
+		port: smtpVars.SMTP_PORT,
+		secure: smtpVars.SMTP_SECURE,
+		auth: {
+			user: smtpVars.SMTP_USERNAME,
+			pass: smtpVars.SMTP_PASSWORD
+		}
+	});
+	await transporter.sendMail({
+		from: `Auto Delivery <${smtpVars.SMTP_USERNAME}>`,
+		replyTo: `${form.name} <${form.email}>`,
+		to: smtpVars.EMAILS_TO,
+		subject: 'Thank You For Contact',
+		text: form.message,
+		html: `
+			<div>
+			  <h1>Information Contact</h1>
+			  <div>
+			    <p>Contact Time: ${moment().format('YYYY-MM-DD HH:MM:SS')}</p>
+			    <p>Contact Name: ${form.name}</p>
+			    <p>Contact Phone: ${form.phone}</p>
+			    <p>Contact Email: ${form.email}</p><br/><br/>
+			    <p>Contact Message</p>
+			    <p>${form.message}</p>
+			  </div>
+			</div>
+		`
+	});
 	subObjects.push({
 		email: (form.email || ""),
 		name: (form.name || "No Name"),
-		phone: (form.phone || "")
+		phone: (form.phone || ""),
+		message: (form.message || "")
 	});
 	writeFile(filePathSub, JSON.stringify(subObjects), {
 		flag: "w",
