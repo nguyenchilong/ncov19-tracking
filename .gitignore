@@ -2,3 +2,4 @@
 /.idea
 .DS_Store
 .env
+/public/js/jquery-validation-1.19.1

@@ -16,12 +16,13 @@ const initTogglerBtn = () => {
 }
 
 const toggleLightDarkMode = () => {
-    if (localStorage.getItem('modeSwitch') === 'dark') {
-        toggleLightMode()
-    } else {
-        toggleDarkMode()
-    }
-    initTogglerBtn()
+    toggleLightMode();
+    // if (localStorage.getItem('modeSwitch') === 'dark') {
+    //     toggleLightMode()
+    // } else {
+    //     toggleDarkMode()
+    // }
+    // initTogglerBtn()
 }
 
 
@@ -78,13 +79,13 @@ const saveModeToLS = (mode) => {
 }
 
 const getModeFromLS = () => {
-    const mode = localStorage.getItem('modeSwitch')
-
-    if (mode === 'light') {
-        toggleLightMode();
-    } else {
-        toggleDarkMode();
-    }
+    toggleLightMode();
+    // const mode = localStorage.getItem('modeSwitch')
+    // if (mode === 'light') {
+    //     toggleLightMode();
+    // } else {
+    //     toggleDarkMode();
+    // }
 }
 toggleModeBtn.addEventListener("click", toggleLightDarkMode)
 
