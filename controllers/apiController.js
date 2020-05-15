@@ -17,7 +17,8 @@ exports.getCurrentStatus = async (req, res, next) => {
 	const data = worldMeterParser.parseWorldMeterData($);
 	const casesByCountry = tabletojson.convert(html, {
 		stripHtmlFromHeadings: false,
-		headings: ['name', 'totalCases', 'newCases', 'totalDeaths', 'newDeaths', 'totalRecoveries', 'activeCases', 'seriousCases', 'totCasesPer1Mil', 'totDeathsPer1Mil', 'totalTests', 'totalTestsPer1Mil', 'region']
+		ignoreColumns: [0],
+		headings: ['name', 'totalCases', 'newCases', 'totalDeaths', 'newDeaths', 'totalRecoveries', 'activeCases', 'seriousCases', 'totCasesPer1Mil', 'totDeathsPer1Mil', 'totalTests', 'totalTestsPer1Mil', 'population', 'region']
 	})[0];
 	data['casesByCountry'] = casesByCountry
 	res.json(data);
